@@ -7,8 +7,9 @@ html,body{
 }
 
 body{
-	font-family:'Source Sans Pro',Arial,sans-serif;
-	font-size: 16px;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+/*	font-family:'Source Sans Pro',Arial,sans-serif;
+*/	font-size: 16px;
 	color: #89949C;
 	letter-spacing: .01em;
 	overflow-x: hidden;
@@ -16,6 +17,18 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
+	color: #39444C;
+}
+
+p {
+  --x-height-multiplier: 0.35;
+  --baseline-multiplier: 0.179;
+  letter-spacing: .01rem;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
 	color: #39444C;
 }
 
