@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, isDevMode } from '@angular/core';
 
 declare var Waypoint: any;
 declare var $: any;
+declare var mixpanel: any;
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,14 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+	
+	ngOnInit() {
+
+		if(!isDevMode()) {
+			mixpanel.track("Page Load");
+		}
+
+	}
   
 	ngAfterViewInit() {
 				
