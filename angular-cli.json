@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "assets/images/favicon-angel.png"
       ],
       "index": "index.html",
       "main": "main.ts",
