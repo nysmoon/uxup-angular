@@ -1,4 +1,5 @@
 import { Component, isDevMode } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 declare var Waypoint: any;
 declare var $: any;
@@ -9,8 +10,11 @@ declare var mixpanel: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 	
+
+
 	ngOnInit() {
 
 		if(!isDevMode()) {
