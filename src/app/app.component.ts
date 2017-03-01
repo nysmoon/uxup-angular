@@ -1,5 +1,5 @@
 import { Component, isDevMode } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 
 declare var Waypoint: any;
 declare var $: any;
@@ -12,10 +12,15 @@ declare var mixpanel: any;
 })
 
 export class AppComponent {
-	
+
+	url: string;
+
+  constructor(private router: Router) { 
+  }
 
 
 	ngOnInit() {
+  	this.url = this.router.url;
 
 		if(!isDevMode()) {
 			mixpanel.track("Page Load");

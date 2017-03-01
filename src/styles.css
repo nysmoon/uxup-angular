@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* UXUP STYLES*/
+
+section {
+	padding-top: 120px;
+}
+
+
+/* ---=== Home Page ===--- */
+
+#home-page {
+	background-image: url('assets/images/keyboard.jpg');
+	background-repeat: repeat-y;
+	height: 100%;
+}
+
+.cta-home {
+	margin-top: 60px;
+	border-radius: 5px;
+	padding: 60px 0;
+}
+
+/* ---=== About Page ===---- */
+
+.service-item {
+	display: inline-block;
+}

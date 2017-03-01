@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
     {
@@ -20,6 +21,9 @@ const routes: Routes = [
     },{
       path: 'about',
       component: AboutComponent,
+    },{
+      path: 'pricing',
+      component: PricingComponent,
     },{
       path: 'how-it-works',
       component: WorkflowComponent,
@@ -42,7 +46,8 @@ const routes: Routes = [
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,

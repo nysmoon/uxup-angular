@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var Waypoint: any;
+declare var $: any;
+
 @Component({
   selector: 'app-workflow',
   templateUrl: './workflow.component.html',
-  styleUrls: ['./workflow.component.css']
 })
 export class WorkflowComponent implements OnInit {
 
@@ -11,5 +13,13 @@ export class WorkflowComponent implements OnInit {
 
   ngOnInit() {
   }
+	ngAfterViewInit() {
 
+		$('.scrollimation').waypoint({
+			handler: function() {
+				$(this.element).addClass('in');
+			},
+			offset:'95%'
+		});
+	}
 }

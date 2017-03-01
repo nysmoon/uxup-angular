@@ -306,7 +306,7 @@ hr{
 	transform: translateY(0);
 }
 
-#site-nav a{
+.site-nav a{
 	padding:7px 30px;
 	min-width:120px;
 	font-size: 16px;
@@ -318,22 +318,22 @@ hr{
 	transition: color .2s ease-out, padding .3s ease-out; 
 }
 
-#site-nav .active a,
-#site-nav a:hover,
-#site-nav a:focus{
+.site-nav a.active,
+.site-nav a:hover,
+.site-nav a:focus{
 	padding-top: 4px;
 	padding-bottom:10px;
 	color:#F1CF0F !important;
 	background: none;
 }
-#site-nav a .fa{
+.site-nav a .fa{
 	display: block;
 	margin-bottom: 5px;
 	font-size: 21px;
 	text-align: center;
 }
 
-#site-nav ul li + li{
+.site-nav ul li + li{
 	border-left:1px solid #b9c4cC;
 }
 
@@ -964,7 +964,7 @@ hr{
 }
 
 #project-viewer-content .project-media.video-container{
-	background: url("video-loader.gif") center center no-repeat;
+	background: url("../images/video-loader.gif") center center no-repeat;
 	background-color: #000;
 }
 
@@ -2036,4 +2036,3 @@ hr{
 	}
 	
 }
-
