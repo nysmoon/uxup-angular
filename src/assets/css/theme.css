@@ -40,18 +40,20 @@ p {
 }
 
 a:focus,
+a:not([href]):not([tabindex]):focus,
 button:focus{
   outline: none !important;
 }
 
-a{
+a, 
+a:not([href]):not([tabindex]) {
 	color: #F1CF0F;
 	-webkit-transition:color .15s ease-out;
 	transition:color .15s ease-out;
 }
 
 a:hover,
-a:focus{
+a:focus {
 	color: #89949C;
 	text-decoration: none;
 }
@@ -220,8 +222,11 @@ hr{
 
 .btn-dc.btn-main-color,
 .btn-dc.btn-main-color:hover,
-.btn-dc.btn-main-color:focus{
+.btn-dc.btn-main-color:focus,
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
 	color: #F1CF0F;
+	cursor: pointer;
 }
 
 /*-----------------------
@@ -346,7 +351,7 @@ hr{
 	height:100%;
 	min-height:860px;
 	margin-bottom:-64px;
-	background: url('../images/keyboard.jpg') no-repeat;
+	background: url('../images/keyboard-light.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
 	background-size: cover;
@@ -1215,12 +1220,12 @@ hr{
 ---- Contact Styles  ----
 -------------------------*/
 
-#contact{
+#contact {
 	position: relative;
-	background: url("../images/map.jpg") center center no-repeat;
+	background: url("../images/map-light.jpg") center center no-repeat;
 }
 
-.color-overlay:before{
+.color-overlay:before {
 	position: absolute;
 	display: block;
 	content: "";
