@@ -18,9 +18,15 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+      "../node_modules/tether/dist/css/tether.min.css",
+      "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "../node_modules/font-awesome/css/font-awesome.min.css",
+      "assets/css/flexslider.css",
+      "assets/css/theme.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

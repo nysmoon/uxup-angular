@@ -40,18 +40,20 @@ p {
 }
 
 a:focus,
+a:not([href]):not([tabindex]):focus,
 button:focus{
   outline: none !important;
 }
 
-a{
+a, 
+a:not([href]):not([tabindex]) {
 	color: #F1CF0F;
 	-webkit-transition:color .15s ease-out;
 	transition:color .15s ease-out;
 }
 
 a:hover,
-a:focus{
+a:focus {
 	color: #89949C;
 	text-decoration: none;
 }
@@ -220,8 +222,11 @@ hr{
 
 .btn-dc.btn-main-color,
 .btn-dc.btn-main-color:hover,
-.btn-dc.btn-main-color:focus{
+.btn-dc.btn-main-color:focus,
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
 	color: #F1CF0F;
+	cursor: pointer;
 }
 
 /*-----------------------
@@ -306,7 +311,7 @@ hr{
 	transform: translateY(0);
 }
 
-#site-nav a{
+.site-nav a{
 	padding:7px 30px;
 	min-width:120px;
 	font-size: 16px;
@@ -318,22 +323,22 @@ hr{
 	transition: color .2s ease-out, padding .3s ease-out; 
 }
 
-#site-nav .active a,
-#site-nav a:hover,
-#site-nav a:focus{
+.site-nav a.active,
+.site-nav a:hover,
+.site-nav a:focus{
 	padding-top: 4px;
 	padding-bottom:10px;
 	color:#F1CF0F !important;
 	background: none;
 }
-#site-nav a .fa{
+.site-nav a .fa{
 	display: block;
 	margin-bottom: 5px;
 	font-size: 21px;
 	text-align: center;
 }
 
-#site-nav ul li + li{
+.site-nav ul li + li{
 	border-left:1px solid #b9c4cC;
 }
 
@@ -346,7 +351,7 @@ hr{
 	height:100%;
 	min-height:860px;
 	margin-bottom:-64px;
-	background: url('../images/keyboard.jpg') no-repeat;
+	background: url('../images/keyboard-light.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
 	background-size: cover;
@@ -964,7 +969,7 @@ hr{
 }
 
 #project-viewer-content .project-media.video-container{
-	background: url("video-loader.gif") center center no-repeat;
+	background: url("../images/video-loader.gif") center center no-repeat;
 	background-color: #000;
 }
 
@@ -1215,12 +1220,12 @@ hr{
 ---- Contact Styles  ----
 -------------------------*/
 
-#contact{
+#contact {
 	position: relative;
-	background: url("../images/map.jpg") center center no-repeat;
+	background: url("../images/map-light.jpg") center center no-repeat;
 }
 
-.color-overlay:before{
+.color-overlay:before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -2036,4 +2041,3 @@ hr{
 	}
 	
 }
-
