@@ -9,7 +9,7 @@ declare var $: any;
 })
 export class PricingComponent implements OnInit {
 	
-	showExample: false;
+	showExample: boolean = false;
 
 	constructor() {
 	}
