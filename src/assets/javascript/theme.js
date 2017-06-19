@@ -26,16 +26,16 @@ $(document).ready(function(){
 		}
 	});
 	
-	$('a.scrollto').click(function(e){
-		e.preventDefault();
-		var target =$(this).attr('href');
-		$('html, body').stop().animate({scrollTop: $(target).offset().top}, 1600, 'easeInOutExpo',
-			function(){window.location.hash =target;});
+	// $('a.scrollto').click(function(e){
+	// 	e.preventDefault();
+	// 	var target =$(this).attr('href');
+	// 	$('html, body').stop().animate({scrollTop: $(target).offset().top}, 1600, 'easeInOutExpo',
+	// 		function(){window.location.hash =target;});
 			
-		if ($('.navbar-collapse').hasClass('in')){
-			$('.navbar-collapse').removeClass('in').addClass('collapse');
-		}
-	});
+	// 	if ($('.navbar-collapse').hasClass('in')){
+	// 		$('.navbar-collapse').removeClass('in').addClass('collapse');
+	// 	}
+	// });
 	
 	/*============================================
 	Tabs
