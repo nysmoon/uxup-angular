@@ -15,11 +15,15 @@
 	height:100%;
 	min-height:860px;
 	margin-bottom:-64px;
-	background: url('assets/images/keyboard-light.jpg') no-repeat;
+	background: url('assets/images/particles.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
 	background-size: cover;
 	overflow: hidden;
+}
+
+.sub-header {
+	color: #fff;
 }
 
 .cta-home {
