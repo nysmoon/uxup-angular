@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
     {
@@ -21,6 +22,9 @@ const routes: Routes = [
     },{
       path: 'about',
       component: AboutComponent,
+    },{
+      path: 'services',
+      component: ServicesComponent,
     },{
       path: 'pricing',
       component: PricingComponent,
@@ -47,7 +51,8 @@ const routes: Routes = [
     HeaderComponent,
     HomeComponent,
     ContactComponent,
-    PricingComponent
+    PricingComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
